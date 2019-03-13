@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F105D522236B84C00F6FBF4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D512236B84C00F6FBF4 /* ApiManager.swift */; };
+		0F105D552236D4E100F6FBF4 /* UsersDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D542236D4E100F6FBF4 /* UsersDTO.swift */; };
+		0F105D572236D4FF00F6FBF4 /* InfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D562236D4FF00F6FBF4 /* InfoDTO.swift */; };
+		0F105D592236D50F00F6FBF4 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D582236D50F00F6FBF4 /* UserDTO.swift */; };
+		0F105D5B2236D53A00F6FBF4 /* DobDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D5A2236D53A00F6FBF4 /* DobDTO.swift */; };
+		0F105D5D2236D57200F6FBF4 /* IdDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D5C2236D57200F6FBF4 /* IdDTO.swift */; };
+		0F105D5F2236D58500F6FBF4 /* LocationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D5E2236D58500F6FBF4 /* LocationDTO.swift */; };
+		0F105D612236D5A200F6FBF4 /* CoordinatesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D602236D5A200F6FBF4 /* CoordinatesDTO.swift */; };
+		0F105D632236D5B700F6FBF4 /* TimezonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D622236D5B700F6FBF4 /* TimezonDTO.swift */; };
+		0F105D652236D5CB00F6FBF4 /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D642236D5CB00F6FBF4 /* LoginDTO.swift */; };
+		0F105D672236D5D900F6FBF4 /* NameDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D662236D5D900F6FBF4 /* NameDTO.swift */; };
+		0F105D692236D5EB00F6FBF4 /* PictureDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D682236D5EB00F6FBF4 /* PictureDTO.swift */; };
 		0FF9570022368D1600B43EC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF956FF22368D1600B43EC3 /* AppDelegate.swift */; };
 		0FF9570722368D1700B43EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9570622368D1700B43EC3 /* Assets.xcassets */; };
 		0FF9570A22368D1700B43EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9570822368D1700B43EC3 /* LaunchScreen.storyboard */; };
@@ -28,6 +40,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F105D512236B84C00F6FBF4 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		0F105D542236D4E100F6FBF4 /* UsersDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDTO.swift; sourceTree = "<group>"; };
+		0F105D562236D4FF00F6FBF4 /* InfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDTO.swift; sourceTree = "<group>"; };
+		0F105D582236D50F00F6FBF4 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		0F105D5A2236D53A00F6FBF4 /* DobDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DobDTO.swift; sourceTree = "<group>"; };
+		0F105D5C2236D57200F6FBF4 /* IdDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdDTO.swift; sourceTree = "<group>"; };
+		0F105D5E2236D58500F6FBF4 /* LocationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDTO.swift; sourceTree = "<group>"; };
+		0F105D602236D5A200F6FBF4 /* CoordinatesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesDTO.swift; sourceTree = "<group>"; };
+		0F105D622236D5B700F6FBF4 /* TimezonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezonDTO.swift; sourceTree = "<group>"; };
+		0F105D642236D5CB00F6FBF4 /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
+		0F105D662236D5D900F6FBF4 /* NameDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDTO.swift; sourceTree = "<group>"; };
+		0F105D682236D5EB00F6FBF4 /* PictureDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDTO.swift; sourceTree = "<group>"; };
 		0FF956FC22368D1600B43EC3 /* iOSClassCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSClassCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF956FF22368D1600B43EC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FF9570622368D1700B43EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F105D532236D4C000F6FBF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F105D542236D4E100F6FBF4 /* UsersDTO.swift */,
+				0F105D562236D4FF00F6FBF4 /* InfoDTO.swift */,
+				0F105D582236D50F00F6FBF4 /* UserDTO.swift */,
+				0F105D5A2236D53A00F6FBF4 /* DobDTO.swift */,
+				0F105D5C2236D57200F6FBF4 /* IdDTO.swift */,
+				0F105D5E2236D58500F6FBF4 /* LocationDTO.swift */,
+				0F105D602236D5A200F6FBF4 /* CoordinatesDTO.swift */,
+				0F105D622236D5B700F6FBF4 /* TimezonDTO.swift */,
+				0F105D642236D5CB00F6FBF4 /* LoginDTO.swift */,
+				0F105D662236D5D900F6FBF4 /* NameDTO.swift */,
+				0F105D682236D5EB00F6FBF4 /* PictureDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0FF956F322368D1600B43EC3 = {
 			isa = PBXGroup;
 			children = (
@@ -85,9 +127,9 @@
 		0FF956FE22368D1600B43EC3 /* iOSClassCode */ = {
 			isa = PBXGroup;
 			children = (
+				0FF9571122368D2900B43EC3 /* App */,
 				0FF9571322368F2700B43EC3 /* Data */,
 				0FF9571222368F1E00B43EC3 /* Views */,
-				0FF9571122368D2900B43EC3 /* App */,
 				0FF9570B22368D1700B43EC3 /* Info.plist */,
 			);
 			path = iOSClassCode;
@@ -144,6 +186,8 @@
 		0FF9571622368F4C00B43EC3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				0F105D532236D4C000F6FBF4 /* Models */,
+				0F105D512236B84C00F6FBF4 /* ApiManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -321,19 +365,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FF9572B2236906D00B43EC3 /* MarkTableViewCell.swift in Sources */,
+				0F105D652236D5CB00F6FBF4 /* LoginDTO.swift in Sources */,
 				0FF9571F22368FD400B43EC3 /* StudentsViewController.swift in Sources */,
+				0F105D5D2236D57200F6FBF4 /* IdDTO.swift in Sources */,
+				0F105D5F2236D58500F6FBF4 /* LocationDTO.swift in Sources */,
+				0F105D572236D4FF00F6FBF4 /* InfoDTO.swift in Sources */,
+				0F105D552236D4E100F6FBF4 /* UsersDTO.swift in Sources */,
+				0F105D672236D5D900F6FBF4 /* NameDTO.swift in Sources */,
 				0FF9572022368FD400B43EC3 /* SubjectViewController.swift in Sources */,
 				0FF95733223690A300B43EC3 /* Student.swift in Sources */,
 				0FF95734223690A300B43EC3 /* Subject.swift in Sources */,
+				0F105D612236D5A200F6FBF4 /* CoordinatesDTO.swift in Sources */,
 				0FF9572E2236909300B43EC3 /* SampleDataManager.swift in Sources */,
 				0FF9570022368D1600B43EC3 /* AppDelegate.swift in Sources */,
+				0F105D522236B84C00F6FBF4 /* ApiManager.swift in Sources */,
 				0FF9572A2236906D00B43EC3 /* SubjectTableViewCell.swift in Sources */,
 				0FF9572C2236906D00B43EC3 /* StudentTableViewCell.swift in Sources */,
 				0FF9571E22368FD400B43EC3 /* TeachersViewController.swift in Sources */,
+				0F105D5B2236D53A00F6FBF4 /* DobDTO.swift in Sources */,
 				0FF957292236906D00B43EC3 /* TeacherTableViewCell.swift in Sources */,
+				0F105D592236D50F00F6FBF4 /* UserDTO.swift in Sources */,
 				0FF95735223690A300B43EC3 /* Mark.swift in Sources */,
+				0F105D692236D5EB00F6FBF4 /* PictureDTO.swift in Sources */,
 				0FF95736223690A300B43EC3 /* Teacher.swift in Sources */,
 				0FF9572122368FD400B43EC3 /* MarksViewController.swift in Sources */,
+				0F105D632236D5B700F6FBF4 /* TimezonDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
