@@ -17,20 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        ApiManager.shared.fetchUsers(count: 2) { result in
-            switch result {
-                case .success(let data):
-                    guard let users = data as? UsersDTO else {
-                        return
-                    }
-                    
-                    print(users)
-                
-                case .failure(let message):
-                    print(message ?? "Unknow error")
-            }
-        }
-        
         configureRealm()
  
         return true

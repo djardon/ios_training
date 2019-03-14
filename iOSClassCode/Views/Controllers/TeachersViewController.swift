@@ -51,9 +51,9 @@ extension TeachersViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TeacherTableViewCell.mIdentifier,
                                                  for: indexPath) as! TeacherTableViewCell
-        // Get student data for row
+        // Get teachers data for row
         if let teacher = mTeachers?[indexPath.row] {
-            // Configure cell view with student data
+            // Configure cell view with teachers data
             cell.configureCell(data: teacher)
         }
         

@@ -8,5 +8,7 @@ target 'iOSClassCode' do
   # Pods for SampleConstraints
   pod 'RealmSwift'
   pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'lottie-ios'
 
 end

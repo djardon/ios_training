@@ -12,13 +12,16 @@
 		0F105D572236D4FF00F6FBF4 /* InfoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D562236D4FF00F6FBF4 /* InfoDTO.swift */; };
 		0F105D592236D50F00F6FBF4 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D582236D50F00F6FBF4 /* UserDTO.swift */; };
 		0F105D5B2236D53A00F6FBF4 /* DobDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D5A2236D53A00F6FBF4 /* DobDTO.swift */; };
-		0F105D5D2236D57200F6FBF4 /* IdDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D5C2236D57200F6FBF4 /* IdDTO.swift */; };
-		0F105D5F2236D58500F6FBF4 /* LocationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D5E2236D58500F6FBF4 /* LocationDTO.swift */; };
-		0F105D612236D5A200F6FBF4 /* CoordinatesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D602236D5A200F6FBF4 /* CoordinatesDTO.swift */; };
-		0F105D632236D5B700F6FBF4 /* TimezonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D622236D5B700F6FBF4 /* TimezonDTO.swift */; };
-		0F105D652236D5CB00F6FBF4 /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D642236D5CB00F6FBF4 /* LoginDTO.swift */; };
 		0F105D672236D5D900F6FBF4 /* NameDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D662236D5D900F6FBF4 /* NameDTO.swift */; };
 		0F105D692236D5EB00F6FBF4 /* PictureDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F105D682236D5EB00F6FBF4 /* PictureDTO.swift */; };
+		0FC3285A22396FF2009E3700 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3285922396FF2009E3700 /* UsersViewController.swift */; };
+		0FDE6BB4223AAA4D00B126FA /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BB3223AAA4D00B126FA /* UsersTableViewCell.swift */; };
+		0FDE6BB7223AB7FA00B126FA /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE6BB6223AB7FA00B126FA /* loading_animation.json */; };
+		0FDE6BBD223AC26100B126FA /* CoordinatesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BB8223AC26000B126FA /* CoordinatesDTO.swift */; };
+		0FDE6BBE223AC26100B126FA /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BB9223AC26000B126FA /* LoginDTO.swift */; };
+		0FDE6BBF223AC26100B126FA /* TimezonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BBA223AC26000B126FA /* TimezonDTO.swift */; };
+		0FDE6BC0223AC26100B126FA /* LocationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BBB223AC26100B126FA /* LocationDTO.swift */; };
+		0FDE6BC1223AC26100B126FA /* IdDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BBC223AC26100B126FA /* IdDTO.swift */; };
 		0FF9570022368D1600B43EC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF956FF22368D1600B43EC3 /* AppDelegate.swift */; };
 		0FF9570722368D1700B43EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9570622368D1700B43EC3 /* Assets.xcassets */; };
 		0FF9570A22368D1700B43EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9570822368D1700B43EC3 /* LaunchScreen.storyboard */; };
@@ -45,13 +48,16 @@
 		0F105D562236D4FF00F6FBF4 /* InfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDTO.swift; sourceTree = "<group>"; };
 		0F105D582236D50F00F6FBF4 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 		0F105D5A2236D53A00F6FBF4 /* DobDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DobDTO.swift; sourceTree = "<group>"; };
-		0F105D5C2236D57200F6FBF4 /* IdDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdDTO.swift; sourceTree = "<group>"; };
-		0F105D5E2236D58500F6FBF4 /* LocationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDTO.swift; sourceTree = "<group>"; };
-		0F105D602236D5A200F6FBF4 /* CoordinatesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesDTO.swift; sourceTree = "<group>"; };
-		0F105D622236D5B700F6FBF4 /* TimezonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezonDTO.swift; sourceTree = "<group>"; };
-		0F105D642236D5CB00F6FBF4 /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
 		0F105D662236D5D900F6FBF4 /* NameDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDTO.swift; sourceTree = "<group>"; };
 		0F105D682236D5EB00F6FBF4 /* PictureDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDTO.swift; sourceTree = "<group>"; };
+		0FC3285922396FF2009E3700 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		0FDE6BB3223AAA4D00B126FA /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		0FDE6BB6223AB7FA00B126FA /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_animation.json; sourceTree = "<group>"; };
+		0FDE6BB8223AC26000B126FA /* CoordinatesDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatesDTO.swift; sourceTree = "<group>"; };
+		0FDE6BB9223AC26000B126FA /* LoginDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
+		0FDE6BBA223AC26000B126FA /* TimezonDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimezonDTO.swift; sourceTree = "<group>"; };
+		0FDE6BBB223AC26100B126FA /* LocationDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDTO.swift; sourceTree = "<group>"; };
+		0FDE6BBC223AC26100B126FA /* IdDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdDTO.swift; sourceTree = "<group>"; };
 		0FF956FC22368D1600B43EC3 /* iOSClassCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSClassCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF956FF22368D1600B43EC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FF9570622368D1700B43EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,15 +101,23 @@
 				0F105D562236D4FF00F6FBF4 /* InfoDTO.swift */,
 				0F105D582236D50F00F6FBF4 /* UserDTO.swift */,
 				0F105D5A2236D53A00F6FBF4 /* DobDTO.swift */,
-				0F105D5C2236D57200F6FBF4 /* IdDTO.swift */,
-				0F105D5E2236D58500F6FBF4 /* LocationDTO.swift */,
-				0F105D602236D5A200F6FBF4 /* CoordinatesDTO.swift */,
-				0F105D622236D5B700F6FBF4 /* TimezonDTO.swift */,
-				0F105D642236D5CB00F6FBF4 /* LoginDTO.swift */,
 				0F105D662236D5D900F6FBF4 /* NameDTO.swift */,
 				0F105D682236D5EB00F6FBF4 /* PictureDTO.swift */,
+				0FDE6BB8223AC26000B126FA /* CoordinatesDTO.swift */,
+				0FDE6BBC223AC26100B126FA /* IdDTO.swift */,
+				0FDE6BBB223AC26100B126FA /* LocationDTO.swift */,
+				0FDE6BB9223AC26000B126FA /* LoginDTO.swift */,
+				0FDE6BBA223AC26000B126FA /* TimezonDTO.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0FDE6BB5223AB7F100B126FA /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				0FDE6BB6223AB7FA00B126FA /* loading_animation.json */,
+			);
+			path = Lotties;
 			sourceTree = "<group>";
 		};
 		0FF956F322368D1600B43EC3 = {
@@ -157,6 +171,7 @@
 		0FF9571322368F2700B43EC3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0FDE6BB5223AB7F100B126FA /* Lotties */,
 				0FF9571622368F4C00B43EC3 /* Network */,
 				0FF9571522368F4300B43EC3 /* Local */,
 			);
@@ -199,6 +214,7 @@
 				0FF957282236906D00B43EC3 /* StudentTableViewCell.swift */,
 				0FF957262236906D00B43EC3 /* SubjectTableViewCell.swift */,
 				0FF957252236906D00B43EC3 /* TeacherTableViewCell.swift */,
+				0FDE6BB3223AAA4D00B126FA /* UsersTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -210,6 +226,7 @@
 				0FF9571B22368FD400B43EC3 /* StudentsViewController.swift */,
 				0FF9571C22368FD400B43EC3 /* SubjectViewController.swift */,
 				0FF9571A22368FD400B43EC3 /* TeachersViewController.swift */,
+				0FC3285922396FF2009E3700 /* UsersViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +320,7 @@
 				0FF957242236903F00B43EC3 /* Main.storyboard in Resources */,
 				0FF9570A22368D1700B43EC3 /* LaunchScreen.storyboard in Resources */,
 				0FF9570722368D1700B43EC3 /* Assets.xcassets in Resources */,
+				0FDE6BB7223AB7FA00B126FA /* loading_animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,16 +337,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSClassCode/Pods-iOSClassCode-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,31 +387,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FF9572B2236906D00B43EC3 /* MarkTableViewCell.swift in Sources */,
-				0F105D652236D5CB00F6FBF4 /* LoginDTO.swift in Sources */,
 				0FF9571F22368FD400B43EC3 /* StudentsViewController.swift in Sources */,
-				0F105D5D2236D57200F6FBF4 /* IdDTO.swift in Sources */,
-				0F105D5F2236D58500F6FBF4 /* LocationDTO.swift in Sources */,
 				0F105D572236D4FF00F6FBF4 /* InfoDTO.swift in Sources */,
 				0F105D552236D4E100F6FBF4 /* UsersDTO.swift in Sources */,
 				0F105D672236D5D900F6FBF4 /* NameDTO.swift in Sources */,
 				0FF9572022368FD400B43EC3 /* SubjectViewController.swift in Sources */,
 				0FF95733223690A300B43EC3 /* Student.swift in Sources */,
 				0FF95734223690A300B43EC3 /* Subject.swift in Sources */,
-				0F105D612236D5A200F6FBF4 /* CoordinatesDTO.swift in Sources */,
 				0FF9572E2236909300B43EC3 /* SampleDataManager.swift in Sources */,
+				0FDE6BC0223AC26100B126FA /* LocationDTO.swift in Sources */,
+				0FDE6BBD223AC26100B126FA /* CoordinatesDTO.swift in Sources */,
 				0FF9570022368D1600B43EC3 /* AppDelegate.swift in Sources */,
 				0F105D522236B84C00F6FBF4 /* ApiManager.swift in Sources */,
+				0FDE6BBF223AC26100B126FA /* TimezonDTO.swift in Sources */,
 				0FF9572A2236906D00B43EC3 /* SubjectTableViewCell.swift in Sources */,
+				0FC3285A22396FF2009E3700 /* UsersViewController.swift in Sources */,
 				0FF9572C2236906D00B43EC3 /* StudentTableViewCell.swift in Sources */,
 				0FF9571E22368FD400B43EC3 /* TeachersViewController.swift in Sources */,
 				0F105D5B2236D53A00F6FBF4 /* DobDTO.swift in Sources */,
 				0FF957292236906D00B43EC3 /* TeacherTableViewCell.swift in Sources */,
+				0FDE6BBE223AC26100B126FA /* LoginDTO.swift in Sources */,
 				0F105D592236D50F00F6FBF4 /* UserDTO.swift in Sources */,
+				0FDE6BC1223AC26100B126FA /* IdDTO.swift in Sources */,
 				0FF95735223690A300B43EC3 /* Mark.swift in Sources */,
 				0F105D692236D5EB00F6FBF4 /* PictureDTO.swift in Sources */,
+				0FDE6BB4223AAA4D00B126FA /* UsersTableViewCell.swift in Sources */,
 				0FF95736223690A300B43EC3 /* Teacher.swift in Sources */,
 				0FF9572122368FD400B43EC3 /* MarksViewController.swift in Sources */,
-				0F105D632236D5B700F6FBF4 /* TimezonDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
