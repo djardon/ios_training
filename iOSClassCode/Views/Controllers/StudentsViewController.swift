@@ -10,11 +10,14 @@ import UIKit
 import RealmSwift
 
 class StudentsViewController: UIViewController {
+    // MARK: - IBOutlets -
     @IBOutlet weak var mTableView: UITableView!
     
+    // MARK: - Properties -
     private var mStudents: Results<Student>? = nil
     
     
+    // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,11 +32,13 @@ class StudentsViewController: UIViewController {
         mTableView.reloadData()
     }
     
+    // MARK: - Configuration -
     private func configureTableView() {
         mTableView.delegate = self
         mTableView.dataSource = self
     }
     
+    // MARK: - Configuration -
     private func initData() {
         SampleDataManager.shared.initDefaultData()
     }

@@ -6,7 +6,6 @@
 //  Copyright © 2019 David Jardon. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Lottie
 
@@ -19,7 +18,8 @@ class UsersViewController: UIViewController {
     // MARK: - Properties -
     private var mUsersData: Array<UserDTO> = Array()
     // Lottie animation
-    private let animationView = LOTAnimationView(name: "loading_animation")
+    private let animationView = AnimationView(name: "loading_animation")
+    
     
     // MARK: - Lifecycle -
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ class UsersViewController: UIViewController {
     private func configureLoading() {
         // Configure lottie animation with
         // infinite loops
-        animationView.loopAnimation = true
+        animationView.loopMode = .loop
         // Set lottie animation view size with
         // container view frame
         animationView.frame = self.mViewLoading.frame

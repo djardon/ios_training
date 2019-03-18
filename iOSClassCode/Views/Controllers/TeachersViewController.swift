@@ -6,15 +6,18 @@
 //  Copyright © 2019 David Jardon. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import RealmSwift
 
 class TeachersViewController: UIViewController {
+    // MARK: - IBOutlets -
     @IBOutlet weak var mTableView: UITableView!
     
+    // MARK: - Properties -
     private var mTeachers: Results<Teacher>? = nil
     
     
+    // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,11 +31,13 @@ class TeachersViewController: UIViewController {
         mTableView.reloadData()
     }
     
+    // MARK: - Configuration -
     private func configureTableView() {
         mTableView.delegate = self
         mTableView.dataSource = self
     }
     
+    // MARK: - Configuration -
     private func loadData() {
         mTeachers = SampleDataManager.shared.loadDefaultTeachers()
     }

@@ -22,6 +22,7 @@
 		0FDE6BBF223AC26100B126FA /* TimezonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BBA223AC26000B126FA /* TimezonDTO.swift */; };
 		0FDE6BC0223AC26100B126FA /* LocationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BBB223AC26100B126FA /* LocationDTO.swift */; };
 		0FDE6BC1223AC26100B126FA /* IdDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BBC223AC26100B126FA /* IdDTO.swift */; };
+		0FDE6BC5223AD0DD00B126FA /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE6BC4223AD0DD00B126FA /* UserDetailViewController.swift */; };
 		0FF9570022368D1600B43EC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF956FF22368D1600B43EC3 /* AppDelegate.swift */; };
 		0FF9570722368D1700B43EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9570622368D1700B43EC3 /* Assets.xcassets */; };
 		0FF9570A22368D1700B43EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FF9570822368D1700B43EC3 /* LaunchScreen.storyboard */; };
@@ -58,6 +59,7 @@
 		0FDE6BBA223AC26000B126FA /* TimezonDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimezonDTO.swift; sourceTree = "<group>"; };
 		0FDE6BBB223AC26100B126FA /* LocationDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDTO.swift; sourceTree = "<group>"; };
 		0FDE6BBC223AC26100B126FA /* IdDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdDTO.swift; sourceTree = "<group>"; };
+		0FDE6BC4223AD0DD00B126FA /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		0FF956FC22368D1600B43EC3 /* iOSClassCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSClassCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF956FF22368D1600B43EC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FF9570622368D1700B43EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				0FF9571C22368FD400B43EC3 /* SubjectViewController.swift */,
 				0FF9571A22368FD400B43EC3 /* TeachersViewController.swift */,
 				0FC3285922396FF2009E3700 /* UsersViewController.swift */,
+				0FDE6BC4223AD0DD00B126FA /* UserDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				0FF9570022368D1600B43EC3 /* AppDelegate.swift in Sources */,
 				0F105D522236B84C00F6FBF4 /* ApiManager.swift in Sources */,
 				0FDE6BBF223AC26100B126FA /* TimezonDTO.swift in Sources */,
+				0FDE6BC5223AD0DD00B126FA /* UserDetailViewController.swift in Sources */,
 				0FF9572A2236906D00B43EC3 /* SubjectTableViewCell.swift in Sources */,
 				0FC3285A22396FF2009E3700 /* UsersViewController.swift in Sources */,
 				0FF9572C2236906D00B43EC3 /* StudentTableViewCell.swift in Sources */,
