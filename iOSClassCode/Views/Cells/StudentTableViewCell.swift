@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class StudentTableViewCell: UITableViewCell {
-    static let mClass: String = String(describing: StudentTableViewCell.self)
     static let mIdentifier: String = String(describing: StudentTableViewCell.self)
     static let mEstimatedHeight: CGFloat = 180.0
 
+    // MARK: - Outlets -
     @IBOutlet weak var mView: UIView?
     @IBOutlet weak var mImageView: UIImageView?
     @IBOutlet weak var mNameLabel: UILabel?
@@ -23,6 +24,7 @@ class StudentTableViewCell: UITableViewCell {
     @IBOutlet weak var mHelpButton: UIButton?
 
     
+    // MARK: - Lifecycle -
     override func prepareForReuse() {
         mImageView?.image = nil
         mNameLabel?.text = ""
@@ -35,8 +37,7 @@ class StudentTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        configureCellView()
+        configureCornerAndShadow(view: mView)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -44,25 +45,51 @@ class StudentTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    // MARK: - Configure methods -
     func configureCell(data: Student) {
-        mImageView?.image = UIImage(named: data.photo)
-        mNameLabel?.text = data.name
-        mSurnameLabel?.text = data.surname
-        mYearLabel?.text = data.year
-        mCommentsLabel?.text = data.subjects.reduce("", { (text, subject) -> String in
-            return text.isEmpty ? "\(subject.name)" : "\(text), \(subject.name)"
-        })
-        mMarkLabel?.text = String(describing: data.mark?.mark ?? 0)
-        
-        self.mImageView?.layer.cornerRadius = (self.mImageView?.frame.size.width ?? 0) / 2
+        configure(image: data.photo)
+        configure(name: data.name)
+        configure(surname: data.surname)
+        configure(year: data.year)
+        configure(mark: String(describing: data.mark?.mark ?? 0))
+        configure(subjects: data.subjects)
     }
     
     
-    private func configureCellView() {
-        mView?.layer.cornerRadius = 8.0
-        mView?.layer.shadowColor = UIColor.gray.cgColor
-        mView?.layer.shadowOffset = CGSize.zero
-        mView?.layer.shadowRadius = 8.0
-        mView?.layer.shadowOpacity = 0.6
+    // MARK: - Private methods -
+    private func configure(image: String?) {
+        guard let photo = image else {
+            return
+        }
+        
+        mImageView?.image = UIImage(named: photo)
+        mImageView?.layer.cornerRadius = (self.mImageView?.frame.size.width ?? 0) / 2
+    }
+    
+    private func configure(name: String?) {
+        mNameLabel?.text = name
+    }
+    
+    private func configure(surname: String?) {
+        mSurnameLabel?.text = surname
+    }
+    
+    private func configure(year: String?) {
+        mYearLabel?.text = year
+    }
+    
+    private func configure(mark: String?) {
+        mMarkLabel?.text = mark
+    }
+    
+    private func configure(subjects: List<Subject>?) {
+        guard let subjectsData = subjects else {
+            return
+        }
+        
+        mCommentsLabel?.text = subjectsData.reduce("", { (text, subject) -> String in
+            return text.isEmpty ? "\(subject.name)" : "\(text), \(subject.name)"
+        })
     }
 }
