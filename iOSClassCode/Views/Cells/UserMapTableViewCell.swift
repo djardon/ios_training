@@ -59,13 +59,16 @@ class UserMapTableViewCell: UITableViewCell {
         // show user location on map
         guard let title = data.name?.title,
             let name = data.name?.first,
-            let surname = data.name?.last else {
+            let surname = data.name?.last,
+            let street = data.location?.street,
+            let city = data.location?.city,
+            let state = data.location?.state else {
                 return
         }
         
         // Create map annotation with user data
-        let userMark = UserAnnotation(title: "\(title.capitalized) \(name.capitalized)",
-                                      locationName: "\(surname.capitalized)",
+        let userMark = UserAnnotation(title: "\(title.capitalized) \(name.capitalized) \(surname.capitalized)",
+                                      locationName: "\(street), \(city), \(state)",
                                       coordinate: CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude,
                                                                          longitude: userLocation.coordinate.longitude))
         // Add annotation to map view

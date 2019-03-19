@@ -31,6 +31,8 @@ class UserDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        
+        self.title = mUserData?.name?.first
     }
     
     // MARK: - Configuration -

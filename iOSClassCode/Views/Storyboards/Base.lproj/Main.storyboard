@@ -182,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="1060" y="-174"/>
         </scene>
-        <!-- -->
+        <!--Users-->
         <scene sceneID="e8S-t0-ROc">
             <objects>
-                <viewController id="pyi-f4-X75" customClass="UsersViewController" customModule="iOSClassCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Users" id="pyi-f4-X75" customClass="UsersViewController" customModule="iOSClassCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wcX-LW-ugA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,7 +294,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HSM-k3-JWZ"/>
                     </view>
-                    <navigationItem key="navigationItem" title=" " id="rpa-jb-tU9"/>
+                    <navigationItem key="navigationItem" id="rpa-jb-tU9">
+                        <barButtonItem key="backBarButtonItem" title=" " id="j2b-Rr-r5E"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mTableView" destination="tBC-EQ-6aF" id="M3q-fv-4NJ"/>
                         <outlet property="mViewLoading" destination="iDH-bS-329" id="G46-QJ-dKZ"/>
@@ -547,7 +549,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytw-ZQ-BNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3037.5999999999999" y="2659.5202398800602"/>
+            <point key="canvasLocation" x="2868" y="2660"/>
         </scene>
         <!--Teachers-->
         <scene sceneID="m5o-H7-dxt">
