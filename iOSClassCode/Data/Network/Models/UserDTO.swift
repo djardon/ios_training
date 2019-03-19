@@ -16,7 +16,10 @@ struct UserDTO: Codable {
     let phone, cell: String?
     let picture: PictureDTO?
     let nat: String?
+    let location: LocationDTO?
+
+    // Hide because service return some
+    // errors with this data
     //let id: IdDTO?
     //let login: LoginDTO?
-    //let location: LocationDTO?
 }

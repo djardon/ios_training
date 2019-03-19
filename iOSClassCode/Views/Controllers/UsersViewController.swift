@@ -6,7 +6,6 @@
 //  Copyright © 2019 David Jardon. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import Lottie
 
@@ -19,7 +18,8 @@ class UsersViewController: UIViewController {
     // MARK: - Properties -
     private var mUsersData: Array<UserDTO> = Array()
     // Lottie animation
-    private let animationView = LOTAnimationView(name: "loading_animation")
+    private let animationView = AnimationView(name: "loading_animation")
+    
     
     // MARK: - Lifecycle -
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ class UsersViewController: UIViewController {
     private func configureLoading() {
         // Configure lottie animation with
         // infinite loops
-        animationView.loopAnimation = true
+        animationView.loopMode = .loop
         // Set lottie animation view size with
         // container view frame
         animationView.frame = self.mViewLoading.frame
@@ -106,8 +106,6 @@ class UsersViewController: UIViewController {
                     self.mUsersData.append(contentsOf: usersData)
                     // Reload table view data
                     self.mTableView.reloadData()
-                    // Stop and hide loading
-                    self.showLoading(show: false)
 
                 case .failure(let message):
                     // Print and show alert with message
@@ -116,6 +114,21 @@ class UsersViewController: UIViewController {
                     self.showCancelAlert(title: "Error",
                                          message: message ?? "Unknow error")
             }
+            
+            // Stop and hide loading
+            self.showLoading(show: false)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier?.compare("SEGUE_USERS_TO_USER") == .orderedSame) {
+            guard let destination = segue.destination as? UserDetailViewController,
+                  let cell = sender as? UITableViewCell,
+                  let position = mTableView?.indexPath(for: cell)?.row else {
+                return
+            }
+            
+            destination.mUserData = mUsersData[position]
         }
     }
 }

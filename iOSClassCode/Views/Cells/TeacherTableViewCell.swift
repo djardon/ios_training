@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TeacherTableViewCell: UITableViewCell {
-    static let mClass: String = String(describing: TeacherTableViewCell.self)
     static let mIdentifier: String = String(describing: TeacherTableViewCell.self)
     static let mEstimatedHeight: CGFloat = 150.0
 
-    
+    // MARK: - Outlets -
     @IBOutlet weak var mView: UIView?
     @IBOutlet weak var mImageView: UIImageView?
     @IBOutlet weak var mNameLabel: UILabel?
@@ -23,6 +23,7 @@ class TeacherTableViewCell: UITableViewCell {
     @IBOutlet weak var mSubjectsLabel: UILabel?
     
     
+    // MARK: - Lifecycle -
     override func prepareForReuse() {
         mImageView?.image = nil
         mNameLabel?.text = ""
@@ -35,8 +36,7 @@ class TeacherTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        configureCellView()
+        configureCornerAndShadow(view: mView)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -44,25 +44,50 @@ class TeacherTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // MARK: - Configure methods -
     func configureCell(data: Teacher) {
-        mImageView?.image = UIImage(named: data.photo)
-        mNameLabel?.text = data.name
-        mSurnameLabel?.text = data.surname
-        mYearLabel?.text = data.year
-        mCommentsLabel?.text = data.comment
-        mSubjectsLabel?.text = data.subjects.reduce("", { (text, subject) -> String in
-            return text.isEmpty ? "\(subject.name)" : "\(text), \(subject.name)"
-        })
-        
-        self.mImageView?.layer.cornerRadius = (self.mImageView?.frame.size.width ?? 0) / 2
+        configure(image: data.photo)
+        configure(name: data.name)
+        configure(surname: data.surname)
+        configure(year: data.year)
+        configure(comment: data.comment)
+        configure(subjects: data.subjects)
     }
     
     
-    private func configureCellView() {
-        mView?.layer.cornerRadius = 8.0
-        mView?.layer.shadowColor = UIColor.gray.cgColor
-        mView?.layer.shadowOffset = CGSize.zero
-        mView?.layer.shadowRadius = 8.0
-        mView?.layer.shadowOpacity = 0.6
+    // MARK: - Private methods -
+    private func configure(image: String?) {
+        guard let photo = image else {
+            return
+        }
+        
+        mImageView?.image = UIImage(named: photo)
+        mImageView?.layer.cornerRadius = (self.mImageView?.frame.size.width ?? 0) / 2
+    }
+    
+    private func configure(name: String?) {
+        mNameLabel?.text = name
+    }
+    
+    private func configure(surname: String?) {
+        mSurnameLabel?.text = surname
+    }
+    
+    private func configure(year: String?) {
+        mYearLabel?.text = year
+    }
+    
+    private func configure(comment: String?) {
+        mCommentsLabel?.text = comment
+    }
+    
+    private func configure(subjects: List<Subject>?) {
+        guard let subjectsData = subjects else {
+            return
+        }
+        
+        mSubjectsLabel?.text = subjectsData.reduce("", { (text, subject) -> String in
+            return text.isEmpty ? "\(subject.name)" : "\(text), \(subject.name)"
+        })
     }
 }

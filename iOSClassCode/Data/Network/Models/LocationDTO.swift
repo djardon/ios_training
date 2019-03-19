@@ -9,8 +9,8 @@
 import Foundation
 
 struct LocationDTO: Codable {
-    let street, city, state: String?
-    let postcode: Int?
+    //let street, city, state: String?
+    //let postcode: Int?
     let coordinates: CoordinatesDTO?
-    let timezone: TimezoneDTO?
+    //let timezone: TimezoneDTO?
 }

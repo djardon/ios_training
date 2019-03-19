@@ -6,15 +6,18 @@
 //  Copyright © 2019 David Jardon. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import RealmSwift
 
 class MarksViewController: UIViewController {
+    // MARK: - IBOutlets -
     @IBOutlet weak var mTableView: UITableView!
     
+    // MARK: - Properties -
     private var mMarks: Results<Mark>? = nil
     
     
+    // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,11 +31,13 @@ class MarksViewController: UIViewController {
         mTableView.reloadData()
     }
     
+    // MARK: - Configuration -
     private func configureTableView() {
         mTableView.delegate = self
         mTableView.dataSource = self
     }
     
+    // MARK: - Data -
     private func loadData() {
         mMarks = SampleDataManager.shared.loadDefaultMarks()
     }

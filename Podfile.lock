@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.8.1)
   - Kingfisher (5.2.0)
-  - lottie-ios (2.5.3)
+  - lottie-ios (3.0.0)
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
   - Realm/Headers (3.13.1)
@@ -25,7 +25,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Kingfisher: 07067cfacf371117330dceb4b4b8f5c4b691ab42
-  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  lottie-ios: e412502a03b3dfdaa3e18284194022065d82c820
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
 

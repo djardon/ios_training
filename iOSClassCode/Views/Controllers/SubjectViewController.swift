@@ -6,15 +6,18 @@
 //  Copyright © 2019 David Jardon. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import RealmSwift
 
 class SubjectViewController: UIViewController {
+    // MARK: - IBOutlets -
     @IBOutlet weak var mTableView: UITableView!
     
+    // MARK: - Properties -
     private var mSubjects: Results<Subject>? = nil
     
     
+    // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +31,7 @@ class SubjectViewController: UIViewController {
         mTableView.reloadData()
     }
     
+    // MARK: - Configuration -
     private func configureTableView() {
         mTableView.delegate = self
         mTableView.dataSource = self

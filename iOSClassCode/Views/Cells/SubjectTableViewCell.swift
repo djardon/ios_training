@@ -9,10 +9,11 @@
 import UIKit
 
 class SubjectTableViewCell: UITableViewCell {
-    static let mClass: String = String(describing: SubjectTableViewCell.self)
     static let mIdentifier: String = String(describing: SubjectTableViewCell.self)
     static let mEstimatedHeight: CGFloat = 180.0
 
+    
+    // MARK: - Outlets -
     @IBOutlet weak var mView: UIView?
     @IBOutlet weak var mImageView: UIImageView?
     @IBOutlet weak var mTitleLabel: UILabel?
@@ -20,6 +21,7 @@ class SubjectTableViewCell: UITableViewCell {
     @IBOutlet weak var mDescriptionLabel: UILabel?
 
     
+    // MARK: - Lifecycle -
     override func prepareForReuse() {
         mImageView?.image = nil
         mTitleLabel?.text = ""
@@ -29,8 +31,7 @@ class SubjectTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        configureCellView()
+        configureCornerAndShadow(view: mView)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -38,21 +39,34 @@ class SubjectTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    // MARK: - Configure methods -
     func configureCell(data: Subject) {
-        mImageView?.image = UIImage(named: data.image)
-        mTitleLabel?.text = data.name
-        mSubtitleLabel?.text = data.year
-        mDescriptionLabel?.text = data.comment
-        
-        self.mImageView?.layer.cornerRadius = (self.mImageView?.frame.size.width ?? 0) / 2
+        configure(image: data.image)
+        configure(name: data.name)
+        configure(year: data.year)
+        configure(description: data.comment)
     }
     
+    // MARK: - Private methods -
+    private func configure(image: String?) {
+        guard let photo = image else {
+            return
+        }
+        
+        mImageView?.image = UIImage(named: photo)
+        mImageView?.layer.cornerRadius = (self.mImageView?.frame.size.width ?? 0) / 2
+    }
     
-    private func configureCellView() {
-        mView?.layer.cornerRadius = 8.0
-        mView?.layer.shadowColor = UIColor.gray.cgColor
-        mView?.layer.shadowOffset = CGSize.zero
-        mView?.layer.shadowRadius = 8.0
-        mView?.layer.shadowOpacity = 0.6
+    private func configure(name: String?) {
+        mTitleLabel?.text = name
+    }
+    
+    private func configure(year: String?) {
+        mSubtitleLabel?.text = year
+    }
+    
+    private func configure(description: String?) {
+        mDescriptionLabel?.text = description
     }
 }

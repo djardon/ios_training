@@ -1,34 +1,35 @@
 //
-//  UsersTableViewCell.swift
+//  UserTableViewCell.swift
 //  iOSClassCode
 //
-//  Created by David Jardon on 14/03/2019.
+//  Created by David Jardon on 18/03/2019.
 //  Copyright © 2019 David Jardon. All rights reserved.
 //
 
 import UIKit
 import Kingfisher
 
-class UsersTableViewCell: UITableViewCell {
-    static let mIdentifier: String = String(describing: UsersTableViewCell.self)
-    static let mEstimatedHeight: CGFloat = 150.0
+
+class UserTableViewCell: UITableViewCell {
+    static let mIdentifier: String = String(describing: UserTableViewCell.self)
+    static let mEstimatedHeight: CGFloat = 100.0
     
     // MARK: - Outlets -
     @IBOutlet weak var mView: UIView?
     @IBOutlet weak var mImage: UIImageView?
     @IBOutlet weak var mName: UILabel?
+    @IBOutlet weak var mSurname: UILabel?
     @IBOutlet weak var mGender: UILabel?
-    @IBOutlet weak var mAge: UILabel?
-    @IBOutlet weak var mEmail: UILabel?
+    @IBOutlet weak var mCountry: UILabel?
 
     
     // MARK: - Lifecycle -
     override func prepareForReuse() {
         mImage?.image = nil
         mName?.text = ""
+        mSurname?.text = ""
         mGender?.text = ""
-        mAge?.text = ""
-        mEmail?.text = ""
+        mCountry?.text = ""
     }
     
     override func awakeFromNib() {
@@ -36,19 +37,15 @@ class UsersTableViewCell: UITableViewCell {
         configureCornerAndShadow(view: mView)
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
-    }
-    
     
     // MARK: - Configure methods -
     func configureCell(data: UserDTO) {
         configure(image: data.picture?.large)
-        configure(name: data.name?.first)
+        configure(title: data.name?.title,
+                  name: data.name?.first)
+        configure(surname: data.name?.last)
         configure(gender: data.gender)
-        configure(email: data.email)
-        configure(age: data.dob?.age?.description)
+        configure(nation: data.nat)
     }
     
     
@@ -65,9 +62,15 @@ class UsersTableViewCell: UITableViewCell {
             ])
     }
     
-    private func configure(name firstName: String?) {
-        if let nameData = firstName {
-            mName?.text = nameData.capitalized
+    private func configure(title: String?, name firstName: String?) {
+        if let titleData = title, let nameData = firstName {
+            mName?.text = "\(titleData.capitalized) \(nameData.capitalized)"
+        }
+    }
+    
+    private func configure(surname: String?) {
+        if let surnameData = surname {
+            mSurname?.text = surnameData.capitalized
         }
     }
     
@@ -77,15 +80,9 @@ class UsersTableViewCell: UITableViewCell {
         }
     }
     
-    private func configure(email: String?) {
-        if let emailData = email {
-            mEmail?.text = "\(emailData)"
-        }
-    }
-    
-    private func configure(age: String?) {
-        if let ageData = age {
-            mAge?.text = "age: \(String(describing: ageData))"
+    private func configure(nation: String?) {
+        if let nationData = nation {
+            mCountry?.text = nationData.capitalized
         }
     }
 }
