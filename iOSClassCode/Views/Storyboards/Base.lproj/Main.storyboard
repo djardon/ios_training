@@ -315,7 +315,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U6L-xR-Eky">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserTableViewCell" rowHeight="120" id="1Dm-ez-ZXr" customClass="UserTableViewCell" customModule="iOSClassCode" customModuleProvider="target">
@@ -533,17 +533,30 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mp1-nc-DWN">
+                                <rect key="frame" x="40" y="611" width="295" height="40"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="a9I-yx-s7w"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8e4-yh-uho" firstAttribute="trailing" secondItem="mp1-nc-DWN" secondAttribute="trailing" constant="40" id="VsP-Gb-txr"/>
                             <constraint firstItem="8e4-yh-uho" firstAttribute="trailing" secondItem="U6L-xR-Eky" secondAttribute="trailing" id="XJX-mc-sQ9"/>
+                            <constraint firstItem="8e4-yh-uho" firstAttribute="bottom" secondItem="mp1-nc-DWN" secondAttribute="bottom" constant="16" id="fms-k1-o7W"/>
+                            <constraint firstItem="mp1-nc-DWN" firstAttribute="leading" secondItem="8e4-yh-uho" secondAttribute="leading" constant="40" id="lQe-Hj-39y"/>
                             <constraint firstItem="8e4-yh-uho" firstAttribute="bottom" secondItem="U6L-xR-Eky" secondAttribute="bottom" id="uiv-bL-7aQ"/>
                             <constraint firstItem="U6L-xR-Eky" firstAttribute="top" secondItem="8e4-yh-uho" secondAttribute="top" id="wGK-DG-ilD"/>
                             <constraint firstItem="U6L-xR-Eky" firstAttribute="leading" secondItem="8e4-yh-uho" secondAttribute="leading" id="y0E-zK-Ae5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8e4-yh-uho"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="mSaveButton" destination="mp1-nc-DWN" id="6bq-eZ-frR"/>
                         <outlet property="mTableView" destination="U6L-xR-Eky" id="dd1-a7-Pql"/>
                     </connections>
                 </viewController>

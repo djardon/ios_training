@@ -10,7 +10,10 @@ import Foundation
 
 struct LocationDTO: Codable {
     let street, city, state: String?
-    //let postcode: Int?
     let coordinates: CoordinatesDTO?
+    
+    // Hide because service return some
+    // errors with this data
+    //let postcode: Int?
     //let timezone: TimezoneDTO?
 }

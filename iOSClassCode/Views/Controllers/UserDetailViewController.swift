@@ -17,6 +17,7 @@ enum UserDetailCellType {
 class UserDetailViewController: UIViewController {
     // MARK: - IBOutlets -
     @IBOutlet weak var mTableView: UITableView!
+    @IBOutlet weak var mSaveButton: UIButton!
     
     // MARK: - Properties -
     var mUserData: UserDTO? = nil
@@ -39,6 +40,13 @@ class UserDetailViewController: UIViewController {
     private func configureTableView() {
         mTableView.delegate = self
         mTableView.dataSource = self
+        
+        let footer =  UIView()
+        footer.frame = CGRect(x: 0,
+                              y: 0,
+                              width: 0,
+                              height: mSaveButton.frame.origin.x + 20)
+        mTableView.tableFooterView = footer
     }
 }
 
