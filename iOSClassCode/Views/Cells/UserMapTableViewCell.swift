@@ -18,10 +18,10 @@ class UserMapTableViewCell: UITableViewCell {
     @IBOutlet weak var mView: UIView?
     @IBOutlet weak var mMapView: MKMapView?
 
-    
+
+    // MARK: - Properties -
     private let regionRadius: CLLocationDistance = 100_000
     private var userLocation: CLLocation? = nil
-    
     private let madridLocation = CLLocation(latitude: 41.381653,
                                             longitude: 2.123764)
     private let barcelonaLocation = CLLocation(latitude: 40.454148,
@@ -188,8 +188,8 @@ extension UserMapTableViewCell: MKMapViewDelegate {
             
             // Get polyline rect to set map visible region
             // including Origin and Destination marks
-            let rect = route.polyline.boundingMapRect
-            self.mMapView?.setRegion(MKCoordinateRegion(rect), animated: true)
+            //let rect = route.polyline.boundingMapRect
+            //self.mMapView?.setRegion(MKCoordinateRegion(rect), animated: true)
         }
     }
 }

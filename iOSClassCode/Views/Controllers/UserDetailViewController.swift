@@ -40,13 +40,16 @@ class UserDetailViewController: UIViewController {
     private func configureTableView() {
         mTableView.delegate = self
         mTableView.dataSource = self
-        
+        /*
         let footer =  UIView()
         footer.frame = CGRect(x: 0,
                               y: 0,
                               width: 0,
                               height: mSaveButton.frame.origin.x + 20)
         mTableView.tableFooterView = footer
+        */
+        
+        mTableView.contentInset.bottom = mSaveButton.frame.origin.x + 20
     }
 }
 
